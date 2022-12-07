@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1170368887482046561}
   - component: {fileID: -508845667212913825}
   - component: {fileID: -7548722141637484421}
+  - component: {fileID: 2844633838297526837}
   m_Layer: 0
   m_Name: PlayerUnit
   m_TagString: Untagged
@@ -42,15 +43,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 7554519571005669880}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 929fda385a4cee848badcf10b7942de4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9756aaa8cf8d10445a6262ce0140d2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  damageTextPrefab: {fileID: 0}
+  damageTextPosition: {x: 0, y: 0}
   health: 0
   mana: 0
   attack: 0
   magic: 0
   defense: 0
   speed: 0
+  nextActTurn: 0
 --- !u!212 &-7548722141637484421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92,14 +97,34 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -516874634, guid: 967b0c91089823b49875e2fc632b9f79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.328125, y: 0.40625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2844633838297526837
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7554519571005669880}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
